@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react'
 import { CartaoPost } from '../componentes/CartaoPost'
-import { NovoPostBotao } from '../componentes/NovoPostBotao'
 import { pegarPostsTempoReal } from '../servicos/firestore'
 import styles from '../styles/Home.module.css'
 
@@ -13,7 +12,6 @@ export default function App() {
 
   return (
     <div>
-      <img src='/logo.png' className={styles.logo} alt="Logo SpaceApp" />
 
       <div className={styles.postsArea}>
         {
@@ -30,7 +28,7 @@ export default function App() {
         }
       </div>
 
-      <NovoPostBotao />
+  
     </div>
   )
 }
